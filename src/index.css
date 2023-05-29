@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+    background-color: #e2eafc;
+}
+
+body {
+    background-color: #e2eafc;
+}
+
+@font-face {
+    font-family: oatmeal-pro-bold;
+    src: url(../public/OatmealProTRIAL-Bold.otf);
+}
+
+@font-face {
+    font-family: oatmeal-pro-regular;
+    src: url(../public/OatmealProTRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: oatmeal-pro-thin;
+    src: url(../public/OatmealProTRIAL-Light.otf);
+}
+
+.canvas {
+    height: 100vh;
+    width: 100%;
+}
