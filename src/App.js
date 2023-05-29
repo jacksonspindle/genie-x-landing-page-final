@@ -91,7 +91,7 @@ const LoadingScreen = () => {
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [landing, setLanding] = useState(true);
+  // const [landing, setLanding] = useState(true);
   const [scroll, setScroll] = useState(0);
   const [isHoodieLoaded, setIsHoodieLoaded] = useState(false);
   const canvasRef = useRef(null);
@@ -152,7 +152,7 @@ const App = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [imageArray]);
 
   useEffect(() => {
     controls.start({
