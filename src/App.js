@@ -99,21 +99,24 @@ const App = () => {
   const controls = useAnimation();
   const { scrollYProgress } = useScroll();
 
-  const imageArray = [
-    hoodieImage1,
-    hoodieImage2,
-    hoodieImage3,
-    hoodieImage4,
-    hoodieImage5,
-    hoodieImage6,
-    hoodieImage7,
-    hoodieImage8,
-    hoodieImage9,
-    hoodieImage10,
-    hoodieImage11,
-    hoodieImage12,
-    hoodieImage13,
-  ];
+  const imageArray = React.useMemo(
+    () => [
+      hoodieImage1,
+      hoodieImage2,
+      hoodieImage3,
+      hoodieImage4,
+      hoodieImage5,
+      hoodieImage6,
+      hoodieImage7,
+      hoodieImage8,
+      hoodieImage9,
+      hoodieImage10,
+      hoodieImage11,
+      hoodieImage12,
+      hoodieImage13,
+    ],
+    []
+  );
 
   useEffect(() => {
     scrollYProgress.onChange((v) => setScroll(v));
