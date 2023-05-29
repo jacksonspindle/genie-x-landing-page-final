@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 // import shirtAnimation from "../images/shirtGraphics1.mov"; // import the video file
 import gLogo from "../images/GLogo.png";
-import testGif from "../images/0001.gif";
+// import testGif from "../images/0001.gif";
 
 export default function Shirt({ ...props }) {
   const group = useRef();
@@ -15,7 +15,7 @@ export default function Shirt({ ...props }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [imageTextures, setImageTextures] = useState([]);
   const imageTexture = useTexture(gLogo);
-  const gif = useTexture(testGif);
+  // const gif = useTexture(testGif);
 
   useEffect(() => {
     if (props.shirtImages && Array.isArray(props.shirtImages)) {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 // import Hoodie from "./Hoodie";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import creativityIcon from "../images/paintIcon.png";
 import aiIcon from "../images/gearIcon.png";
@@ -38,10 +38,11 @@ import shirtImage8 from "../images/shirtImage8.png";
 import shirtImage9 from "../images/shirtImage9.png";
 
 const LandingPage = (props) => {
-  const [hovered, setHovered] = useState();
+  // eslint-disable-next-line no-unused-vars
+  // const [hovered, setHovered] = useState();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
+  // const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
   const imageArray = [
     shirtImage1,

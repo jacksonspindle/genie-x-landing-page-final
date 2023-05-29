@@ -8,10 +8,11 @@ export default function Hoodie({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/hoodie.gltf");
 
-  const [videoTexture, setVideoTexture] = useState();
+  const [videoTexture] = useState();
   const [currentImage, setCurrentImage] = useState(0);
   const [imageTextures, setImageTextures] = useState([]);
 
+  // eslint-disable-next-line no-unused-vars
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -75,7 +76,7 @@ export default function Hoodie({ ...props }) {
     }
   }, [props.hoodieImage]);
 
-  useEffect(() => console.log(imageTextures[currentImage]), [currentImage]);
+  // useEffect(() => console.log(imageTextures[currentImage]), [currentImage]);
 
   useFrame((state) => {
     const time = state.clock.getElapsedTime();
