@@ -1,0 +1,833 @@
+/*  */
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.logo-container {
+    /* width: 20%; */
+    position: absolute;
+    /* top: 100; */
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: oatmeal-pro-thin;
+    background-color: transparent;
+}
+
+.logo-container h1 {
+    background-color: transparent;
+}
+
+.hero h2 {
+    /* font-size: 20px !important; */
+    /* padding: 0 21rem 0 21rem; */
+    max-width: 600px;
+}
+
+.hero-text {
+    font-family: oatmeal-pro-regular;
+    z-index: 10;
+    position: absolute;
+    left: 18%;
+    right: 20%;
+    font-size: 50px;
+    background-color: transparent;
+}
+
+.logo{
+    width: 70px;
+    background-color: transparent;
+    
+}
+
+.arrow-icon {
+    filter: invert(1) brightness(1);
+    transition: filter 0.3s ease-in-out;
+}
+
+.discord-button:hover .arrow-icon {
+    filter: invert(1) brightness(1.5);
+}
+
+
+.hero-text h1 {
+    background-color: transparent;
+}
+
+.hero-text-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.landing-page-container {
+    position: absolute;
+    /* top: 0; */
+    width: 100%;
+    height: 2000px;
+}
+
+.arrow {
+    width: 60px;
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 2.5rem;
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: none;
+    
+}
+
+.hero h1, h2 {
+    background: transparent;
+}
+
+.propositions {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+   
+}
+
+.propositions > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.propositions div {
+    /* background-color: black; */
+    display: flex;
+    gap: .1rem;
+}
+
+.propositions div h2 {
+    margin: 0%;
+}
+
+.propositions > div > h2 {
+    font-size: 30px !important;
+}
+
+.propositions p {
+    font-family: oatmeal-pro-thin;
+    font-size: 18px;
+    margin:0 2rem 0 2rem;
+}
+
+.proposition-icon {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.landing-page-container h1 {
+    font-size: 80px;
+    font-family: oatmeal-pro-bold;
+    margin-bottom: 1rem;
+}
+
+.landing-page-container h2 {
+    font-size: 20px;
+    font-family: oatmeal-pro-regular;
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    background-color: transparent;
+}
+
+.input-container input {
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+    border-radius: 1rem;
+    font-family: oatmeal-pro-thin;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-container input:hover {
+    transform: scale(1.2);
+}
+
+.hoodie-canvas{
+    height:100vh;
+    background-color: transparent;
+    z-index: -10;
+    /* position: absolute; */
+    /* width: 100%; */
+    
+}
+
+.promo-video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+}
+
+.promo-video {
+    width: 80%;
+    margin-bottom: 15rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.video-responsive {
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* position: relative; */
+}
+
+.why-we-made-this-container{
+    display: flex;
+    flex: 1 1;
+    /* margin-top: 10rem; */
+    padding: 2rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.why-we-made-this-container div {
+    width: 50%;
+    
+}
+
+.why-we-made-this-container h1 {
+    font-size: 60px;
+}
+
+.why-we-made-this-container h2 {
+    font-size: 35px;
+    font-family: oatmeal-pro-thin;
+}
+
+
+.why-we-made-this-container p {
+    font-family: oatmeal-pro-thin;
+    padding: 0 4rem 2rem 0;
+    font-size: 25px;
+}
+
+
+.product-section-container{
+    display: flex;
+        flex: 1 1;
+        /* margin-top: 10rem; */
+        padding: 2rem;
+        padding-left: 10vw;
+        padding-right: 10vw;
+}
+
+.product-section-container div {
+    width: 50%;
+
+}
+
+.product-section-container h1 {
+    font-size: 60px;
+}
+
+.product-section-container h2 {
+    font-size: 30px;
+    font-family: oatmeal-pro-thin;
+}
+
+
+.product-section-container p {
+    font-family: oatmeal-pro-thin;
+    padding: 0 4rem 2rem 0;
+    font-size: 25px;
+}
+
+.product-section-container-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+        /* flex: 1 1; */
+        /* margin-top: 10rem; */
+        /* padding: 2rem; */
+        /* padding-left: 10vw; */
+        /* padding-right: 10vw; */
+}
+
+.product-section-container-mobile h1 {
+    font-size: 40px !important;
+}
+
+
+.follow-the-journey-container {
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10rem;
+        gap: 1rem;
+}
+
+.follow-the-journey {
+    font-size: 45px !important;
+    
+}
+
+.follow-the-journey input {
+}
+
+
+.skeumorphic-icon {
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+    /* margin-bottom: 2rem; */
+    width: 150px;
+    /* box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3); */
+/* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3)); */
+}
+
+.discord-button-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        /* changing text color to white for better visibility on black */
+        font-family: oatmeal-pro-regular;
+        font-size: 22px;
+        border: none;
+        cursor: pointer;
+        /* background-image: linear-gradient(to right, #0d0d0d 0%, #1a1a1a 51%, #0d0d0d 100%); */
+        /* flex: 1 1 auto; */
+        /* margin: 10px; */
+        padding: 25px;
+        text-align: center;
+        /* text-transform: uppercase; */
+        transition: 0.5s;
+        /* background-size: 200% auto; */
+        /* box-shadow: 0 0 20px #eee; */
+        /* border: 1px solid black; */
+        border-radius: 10px;
+}
+
+
+.discord-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    /* changing text color to white for better visibility on black */
+    font-family: oatmeal-pro-regular;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #0d0d0d 0%, #1a1a1a 51%, #0d0d0d 100%);
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.discord-button:hover {
+    background-position: right center;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    /* adding text glow */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    /* adding button glow */
+}
+
+.discord-button-1:hover {
+    background-position: right center;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    /* adding text glow */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    /* adding button glow */
+}
+
+
+
+
+.final-action-call-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    text-align: center;
+    
+}
+.final-action-call-container h2 {
+    font-size: 30px;
+}
+
+
+.footer-container{
+    /* height:100px; */
+    width: 100%;
+    background-color: black;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    /* padding: 1rem; */
+}
+
+.logos {
+    display: flex;
+    gap: 2rem;
+    background-color: transparent;
+}
+
+.logos img {
+    width: 50px;
+    background-color: transparent;
+    filter: invert(1) brightness(.6);
+    transition: .1s all ease-in-out;
+    cursor: pointer;
+}
+
+.gradient-text{
+    /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: rgba(0, 0, 0, 1);
+    /* font-size: 10rem; */
+    /* width: 80vw; */
+    /* margin: 30vh auto; */
+    /* display: block; */
+    /* text-align: center; */
+    /* cursor: url('/src/images/brushIcon.png'), auto; */
+    transition: color .2s ease-in-out;
+}
+
+.text {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 1);
+    cursor: url('/src/images/brushIcon.png'), auto;
+    transition: color .3s ease-in-out, background-position 2s ease-in-out;
+}
+
+.text:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: left
+    }
+
+    50% {
+        background-position: right
+    }
+
+    100% {
+        background-position: left
+    }
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+    /* background-position: right center; */
+    filter: invert(1) brightness(1.5);
+}
+
+.glow {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 5px #9c27b0, 0 0 10px #9c27b0, 0 0 15px #9c27b0, 0 0 20px #9c27b0;
+}
+
+.glow:after {
+    content: 'Genie';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #9c27b0, transparent);
+    color: transparent;
+    text-shadow: 0 0 5px #9c27b0, 0 0 10px #9c27b0, 0 0 15px #9c27b0, 0 0 20px #9c27b0;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        background-position: -100%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .promo-video,
+    .video-responsive {
+        max-width: 1100px;
+        /* Adjust as needed */
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 1270px) {
+    .propositions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .propositions>div {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .why-we-made-this-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 6rem;
+    }
+
+    .why-we-made-this-content {
+        width: 80vw !important;
+
+    }
+
+    .why-we-made-this-container .shirt-canvas {
+        /* width: 90vw !important; */
+    }
+
+    .promo-video-container {
+        margin: 3rem;
+    }
+
+    .promo-video {
+        margin: 0;
+    }
+
+   
+}
+
+@media (max-width: 767px) {
+    .propositions>div {
+        width: 100%;
+    }
+
+    .propositions p {
+        width: 70%;
+    }
+
+    .why-we-made-this-container, .shirt-canvas {
+        /* padding: 1vw !important; */
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+        position: absolute;
+        width: 90%;
+        background-color: transparent;
+        margin-top: 1.5rem;
+    }
+
+    .hero-outer-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gradient-text {
+        font-size: 50px !important;       
+    }
+
+       
+}
+
+@media (max-width: 700px) {
+    
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+        position: absolute;
+        width: 60%;
+        background-color: transparent;
+        margin-top: 6.5rem;
+    }
+
+    .hero-outer-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .hero {
+        width: 80%;
+    } */
+
+    .hero h1 {
+        font-size: 40px;
+        width: 100%;
+    }.hero h2 {
+        font-size: 15px !important;
+        /* padding: 0 4rem 0 4rem; */
+        min-width: 360px;
+        width: 80%;
+    }
+
+        .logo-container {
+            width: 200px;
+            position: absolute;
+            /* top: 100; */
+            left: 75px !important;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 20px;
+            padding: 1rem;
+            font-family: oatmeal-pro-thin;
+            background-color: transparent;
+        }
+
+    .logo-container h1 {
+        font-size: 28px !important;
+    }
+
+    .infinity-logo {
+        font-size: 50px !important;
+    }
+
+
+    .promo-video-container {
+            margin: 0rem;
+            width: 100vw;
+        }
+
+    .promo-video {
+        width: 100%;
+        margin-right: 1.6rem;
+        /* margin-bottom: 15rem; */
+        border-radius: 2rem;
+        display: flex;
+
+        justify-content: center;
+        position: relative;
+    }
+
+    .why-we-made-this-container {
+    }
+
+    .why-we-made-this-container h1 {
+        font-size: 27px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        
+    } 
+
+    .why-we-made-this-content p {
+        padding: 0 !important;
+        font-size: 20px !important;
+        text-align: center;
+        padding-top: 1rem !important;
+    }
+
+        .follow-the-journey, h1 {
+            font-size: 30px !important;
+            width: 275px;
+        }
+    .discord-button {
+        font-size: 19px;
+        width: 220px !important;
+    }
+
+    .arrow-icon {
+        width: 25px !important;
+    }
+
+    .final-action-call-container h2{
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+        position: absolute;
+        width: 60%;
+        background-color: transparent;
+        margin-top: 11rem;
+    }
+
+    .hero-outer-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .hero {
+        width: 80%;
+    } */
+
+
+    .hero h1 {
+        font-size: 30px !important;
+        width: 100%;
+    }.hero h2 {
+        font-size: 12px;
+        /* padding: 0 4rem 0 4rem; */
+        min-width: 360px;
+        width: 80%;
+    }
+
+        .logo-container {
+            width: 200px;
+            position: absolute;
+            /* top: 100; */
+            left: 75px !important;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 20px;
+            padding: 1rem;
+            font-family: oatmeal-pro-thin;
+            background-color: transparent;
+        }
+
+    .logo-container h1 {
+        font-size: 28px !important;
+    }
+
+    .infinity-logo {
+        font-size: 50px !important;
+    }
+
+
+    .promo-video-container {
+            margin: 0rem;
+            width: 100vw;
+        }
+
+    .promo-video {
+        width: 100%;
+        margin-right: 1.6rem;
+        /* margin-bottom: 15rem; */
+        border-radius: 2rem;
+        display: flex;
+
+        justify-content: center;
+        position: relative;
+    }
+
+    .why-we-made-this-container {
+    }
+
+    .why-we-made-this-container h1 {
+        font-size: 27px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        
+    } 
+
+    .why-we-made-this-content p {
+        padding: 0 !important;
+        font-size: 20px !important;
+        text-align: center;
+        padding-top: 1rem !important;
+    }
+
+        .follow-the-journey, h1 {
+            font-size: 30px !important;
+            width: 275px;
+        }
+    .discord-button {
+        font-size: 19px;
+        width: 220px !important;
+    }
+
+    .arrow-icon {
+        width: 25px !important;
+    }
+
+    .final-action-call-container h2{
+        font-size: 23px;
+    }
+}
+
