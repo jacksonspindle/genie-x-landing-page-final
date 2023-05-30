@@ -42,6 +42,7 @@ const LandingPage = (props) => {
   // const [hovered, setHovered] = useState();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+  const [videoClicked, setVideoClicked] = useState(false);
   // const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
   const imageArray = [
@@ -184,23 +185,40 @@ const LandingPage = (props) => {
           >
             promoVideo
           </video> */}
-          <div className="video-responsive">
-            <iframe
-              style={{
-                width: "90%",
-                borderRadius: "2rem",
-                // maxWidth: "994px",
-                height: "100%",
-                position: "absolute", // Added absolute positioning
-                left: "30px", // Position the iframe within the responsive div
-                top: "0",
-              }}
-              src="https://www.youtube.com/embed/WYg6GiLA6zA"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <div
+            className="video-responsive"
+            onClick={() => setVideoClicked(true)}
+          >
+            {videoClicked ? (
+              <iframe
+                style={{
+                  width: "90%",
+                  borderRadius: "2rem",
+                  height: "100%",
+                  position: "absolute",
+                  left: "30px",
+                  top: "0",
+                }}
+                src="https://www.youtube.com/embed/WYg6GiLA6zA?autoplay=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                style={{
+                  width: "90%",
+                  borderRadius: "2rem",
+                  height: "100%",
+                  position: "absolute",
+                  left: "30px",
+                  top: "0",
+                }}
+                src={`https://img.youtube.com/vi/WYg6GiLA6zA/hqdefault.jpg`}
+                alt="YouTube video thumbnail"
+              />
+            )}
           </div>
         </motion.div>
       </motion.div>
