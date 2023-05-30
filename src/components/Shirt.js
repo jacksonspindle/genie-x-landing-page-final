@@ -4,7 +4,7 @@ import { useFrame } from "@react-three/fiber";
 // import { useSpring, animated } from "@react-spring/three";
 import * as THREE from "three";
 // import shirtAnimation from "../images/shirtGraphics1.mov"; // import the video file
-import gLogo from "../images/GLogo.png";
+import gLogo from "../images/GLogo.webp";
 // import testGif from "../images/0001.gif";
 
 export default function Shirt({ ...props }) {

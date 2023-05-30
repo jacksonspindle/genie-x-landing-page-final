@@ -3,10 +3,10 @@ import { AnimatePresence, motion } from "framer-motion";
 // import Hoodie from "./Hoodie";
 import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
-import creativityIcon from "../images/paintIcon.png";
-import aiIcon from "../images/gearIcon.png";
-import qualityIcon from "../images/starsIcon.png";
-import communityIcon from "../images/puzzleIcon.png";
+import creativityIcon from "../images/paintIcon.webp";
+import aiIcon from "../images/gearIcon.webp";
+import qualityIcon from "../images/starsIcon.webp";
+import communityIcon from "../images/puzzleIcon.webp";
 import Shirt from "./Shirt";
 // import promoVideo from "../images/genieXpromoVideoDraft.mp4";
 // import genieBottleAnimation from "../images/newtest.mov";
@@ -27,15 +27,15 @@ import creativeCommunityGif from "../images/0001.gif";
 import genieBottleGif from "../images/genieBottleGif.gif";
 import hoodieGif from "../images/hoodieGif.gif";
 // import FairyDustCursor from "./FairyDustCursor";
-import shirtImage1 from "../images/shirtImage1.png";
-import shirtImage2 from "../images/shirtImage2.png";
-import shirtImage3 from "../images/shirtImage3.png";
-import shirtImage4 from "../images/shirtImage4.png";
-import shirtImage5 from "../images/shirtImage5.png";
-import shirtImage6 from "../images/shirtImage6.png";
-import shirtImage7 from "../images/shirtImage7.png";
-import shirtImage8 from "../images/shirtImage8.png";
-import shirtImage9 from "../images/shirtImage9.png";
+import shirtImage1 from "../images/shirtimage1.webp";
+import shirtImage2 from "../images/shirtImage2.webp";
+import shirtImage3 from "../images/shirtImage3.webp";
+import shirtImage4 from "../images/shirtimage4.webp";
+import shirtImage5 from "../images/shirtImage5.webp";
+import shirtImage6 from "../images/shirtImage6.webp";
+import shirtImage7 from "../images/shirtimage7.webp";
+import shirtImage8 from "../images/shirtimage8.webp";
+import shirtImage9 from "../images/shirtimage9.webp";
 
 const LandingPage = (props) => {
   // eslint-disable-next-line no-unused-vars
@@ -73,7 +73,7 @@ const LandingPage = (props) => {
       <AnimatePresence>
         {
           <motion.div
-            initial={{ y: -800, opacity: 1 }}
+            initial={{ y: "-95vh", opacity: 1 }}
             // animate={{
             //   transition: { duration: 1.5, delay: 1.1 },
             //   opacity: 1,

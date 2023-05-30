@@ -14,21 +14,21 @@ import "./styles/landing-page.css";
 // import arrow from "./arrow.png";
 import Hoodie from "./components/Hoodie";
 // import * as THREE from "three";
-import gLogo from "../src/images/GLogoLarge.png";
+import gLogo from "../src/images/GLogoLarge.webp";
 import loadingAnimation from "../src/images/loadingGif.gif";
-import hoodieImage1 from "../src/images/hoodieImage1.png";
-import hoodieImage2 from "../src/images/hoodieImage2.png";
-import hoodieImage3 from "../src/images/hoodieImage3.png";
-import hoodieImage4 from "../src/images/hoodieImage4.png";
-import hoodieImage5 from "../src/images/hoodieImage5.png";
-import hoodieImage6 from "../src/images/hoodieImage6.png";
-import hoodieImage7 from "../src/images/hoodieImage7.png";
-import hoodieImage8 from "../src/images/hoodieImage8.png";
-import hoodieImage9 from "../src/images/hoodieImage9.png";
-import hoodieImage10 from "../src/images/hoodieImage10.png";
-import hoodieImage11 from "../src/images/hoodieImage11.png";
-import hoodieImage12 from "../src/images/hoodieImage12.png";
-import hoodieImage13 from "../src/images/hoodieImage13.png";
+import hoodieImage1 from "../src/images/hoodieimage1.webp";
+import hoodieImage2 from "../src/images/hoodieimage2.webp";
+import hoodieImage3 from "../src/images/hoodieimage3.webp";
+import hoodieImage4 from "../src/images/hoodieImage4.webp";
+import hoodieImage5 from "../src/images/hoodieimage5.webp";
+import hoodieImage6 from "../src/images/hoodieimages6.webp";
+import hoodieImage7 from "../src/images/hoodieImages7.webp";
+import hoodieImage8 from "../src/images/hoodieimages8.webp";
+import hoodieImage9 from "../src/images/hoodieimages9.webp";
+import hoodieImage10 from "../src/images/hoodieimages10.webp";
+import hoodieImage11 from "../src/images/hoodieimages11.webp";
+import hoodieImage12 from "../src/images/hoodieimages12.webp";
+import hoodieImage13 from "../src/images/hoodieimages13.webp";
 
 const LoadingScreen = () => {
   useEffect(() => {
