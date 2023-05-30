@@ -5,9 +5,7 @@
 }
 
 .logo-container {
-    /* width: 20%; */
     position: absolute;
-    /* top: 100; */
     left: 0;
     display: flex;
     align-items: center;
@@ -25,8 +23,6 @@
 }
 
 .hero h2 {
-    /* font-size: 20px !important; */
-    /* padding: 0 21rem 0 21rem; */
     max-width: 600px;
 }
 
@@ -68,7 +64,6 @@
 
 .landing-page-container {
     position: absolute;
-    /* top: 0; */
     width: 100%;
     height: 2000px;
 }
@@ -124,7 +119,6 @@
 }
 
 .propositions div {
-    /* background-color: black; */
     display: flex;
     gap: .1rem;
 }
@@ -185,8 +179,6 @@
     height:100vh;
     background-color: transparent;
     z-index: -10;
-    /* position: absolute; */
-    /* width: 100%; */
     
 }
 
@@ -212,13 +204,11 @@
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    /* position: relative; */
 }
 
 .why-we-made-this-container{
     display: flex;
     flex: 1 1;
-    /* margin-top: 10rem; */
     padding: 2rem;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -249,7 +239,6 @@
 .product-section-container{
     display: flex;
         flex: 1 1;
-        /* margin-top: 10rem; */
         padding: 2rem;
         padding-left: 10vw;
         padding-right: 10vw;
@@ -280,11 +269,6 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-        /* flex: 1 1; */
-        /* margin-top: 10rem; */
-        /* padding: 2rem; */
-        /* padding-left: 10vw; */
-        /* padding-right: 10vw; */
 }
 
 .product-section-container-mobile h1 {
@@ -313,10 +297,7 @@
     padding: 1rem;
     border-radius: 1rem;
     transition: all .5s ease-in-out;
-    /* margin-bottom: 2rem; */
     width: 150px;
-    /* box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3); */
-/* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3)); */
 }
 
 .discord-button-1 {
@@ -327,21 +308,13 @@
         height: 40px;
         background-color: black;
         color: white;
-        /* changing text color to white for better visibility on black */
         font-family: oatmeal-pro-regular;
         font-size: 22px;
         border: none;
         cursor: pointer;
-        /* background-image: linear-gradient(to right, #0d0d0d 0%, #1a1a1a 51%, #0d0d0d 100%); */
-        /* flex: 1 1 auto; */
-        /* margin: 10px; */
         padding: 25px;
         text-align: center;
-        /* text-transform: uppercase; */
         transition: 0.5s;
-        /* background-size: 200% auto; */
-        /* box-shadow: 0 0 20px #eee; */
-        /* border: 1px solid black; */
         border-radius: 10px;
 }
 
@@ -352,7 +325,6 @@
     border-radius: 1rem;
     background-color: black;
     color: white;
-    /* changing text color to white for better visibility on black */
     font-family: oatmeal-pro-regular;
     font-size: 22px;
     border: none;
@@ -362,7 +334,6 @@
     margin: 10px;
     padding: 30px;
     text-align: center;
-    /* text-transform: uppercase; */
     transition: 0.5s;
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
@@ -373,17 +344,13 @@
 .discord-button:hover {
     background-position: right center;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
-    /* adding text glow */
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-    /* adding button glow */
 }
 
 .discord-button-1:hover {
     background-position: right center;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
-    /* adding text glow */
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
-    /* adding button glow */
 }
 
 
@@ -404,7 +371,6 @@
 
 
 .footer-container{
-    /* height:100px; */
     width: 100%;
     background-color: black;
     margin-top: 7rem;
@@ -413,7 +379,6 @@
     align-items: center;
     flex-direction: column;
     height: 150px;
-    /* padding: 1rem; */
 }
 
 .logos {
@@ -431,18 +396,7 @@
 }
 
 .gradient-text{
-    /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    background-clip: text;
-    -webkit-background-clip: text; */
     color: rgba(0, 0, 0, 1);
-    /* font-size: 10rem; */
-    /* width: 80vw; */
-    /* margin: 30vh auto; */
-    /* display: block; */
-    /* text-align: center; */
-    /* cursor: url('/src/images/brushIcon.png'), auto; */
     transition: color .2s ease-in-out;
 }
 
@@ -477,7 +431,6 @@
 
 .logos img:hover {
     transform: scale(1.1);
-    /* background-position: right center; */
     filter: invert(1) brightness(1.5);
 }
 
@@ -521,7 +474,6 @@
     .promo-video,
     .video-responsive {
         max-width: 1100px;
-        /* Adjust as needed */
         margin: auto;
     }
 }
@@ -550,9 +502,6 @@
 
     }
 
-    .why-we-made-this-container .shirt-canvas {
-        /* width: 90vw !important; */
-    }
 
     .promo-video-container {
         margin: 3rem;
@@ -574,9 +523,6 @@
         width: 70%;
     }
 
-    .why-we-made-this-container, .shirt-canvas {
-        /* padding: 1vw !important; */
-    }
 
     .hero-container {
         display: flex;
@@ -624,16 +570,13 @@
         justify-content: center;
     }
 
-    /* .hero {
-        width: 80%;
-    } */
+  
 
     .hero h1 {
         font-size: 40px;
         width: 100%;
     }.hero h2 {
         font-size: 15px !important;
-        /* padding: 0 4rem 0 4rem; */
         min-width: 360px;
         width: 80%;
     }
@@ -641,7 +584,6 @@
         .logo-container {
             width: 200px;
             position: absolute;
-            /* top: 100; */
             left: 75px !important;
             display: flex;
             align-items: center;
@@ -671,15 +613,11 @@
     .promo-video {
         width: 100%;
         margin-right: 1.6rem;
-        /* margin-bottom: 15rem; */
         border-radius: 2rem;
         display: flex;
 
         justify-content: center;
         position: relative;
-    }
-
-    .why-we-made-this-container {
     }
 
     .why-we-made-this-container h1 {
@@ -738,9 +676,6 @@
         justify-content: center;
     }
 
-    /* .hero {
-        width: 80%;
-    } */
 
 
     .hero h1 {
@@ -748,7 +683,6 @@
         width: 100%;
     }.hero h2 {
         font-size: 12px;
-        /* padding: 0 4rem 0 4rem; */
         min-width: 360px;
         width: 80%;
     }
@@ -756,7 +690,6 @@
         .logo-container {
             width: 200px;
             position: absolute;
-            /* top: 100; */
             left: 75px !important;
             display: flex;
             align-items: center;
@@ -786,7 +719,6 @@
     .promo-video {
         width: 100%;
         margin-right: 1.6rem;
-        /* margin-bottom: 15rem; */
         border-radius: 2rem;
         display: flex;
 
@@ -794,9 +726,7 @@
         position: relative;
     }
 
-    .why-we-made-this-container {
-    }
-
+   
     .why-we-made-this-container h1 {
         font-size: 27px !important;
         display: flex !important;

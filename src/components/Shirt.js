@@ -1,21 +1,16 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useGLTF, useTexture, Decal } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-// import { useSpring, animated } from "@react-spring/three";
 import * as THREE from "three";
-// import shirtAnimation from "../images/shirtGraphics1.mov"; // import the video file
 import gLogo from "../images/GLogo.webp";
-// import testGif from "../images/0001.gif";
 
 export default function Shirt({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/shirt-v1.glb");
 
-  // const [videoTexture, setVideoTexture] = useState();
   const [currentImage, setCurrentImage] = useState(0);
   const [imageTextures, setImageTextures] = useState([]);
   const imageTexture = useTexture(gLogo);
-  // const gif = useTexture(testGif);
 
   useEffect(() => {
     if (props.shirtImages && Array.isArray(props.shirtImages)) {
@@ -63,9 +58,7 @@ export default function Shirt({ ...props }) {
   }, [props.shirtImages]);
 
   useFrame(() => {
-    // const rotationFactor = 15;
-    // group.current.rotation.y = props.scroll * rotationFactor;
-    const rotationSpeed = 0.009; // Adjust the rotation speed as desired
+    const rotationSpeed = 0.009;
     group.current.rotation.y += rotationSpeed;
   });
 

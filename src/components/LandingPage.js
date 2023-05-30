@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-// import Hoodie from "./Hoodie";
 import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import creativityIcon from "../images/paintIcon.webp";
@@ -8,25 +7,16 @@ import aiIcon from "../images/gearIcon.webp";
 import qualityIcon from "../images/starsIcon.webp";
 import communityIcon from "../images/puzzleIcon.webp";
 import Shirt from "./Shirt";
-// import promoVideo from "../images/genieXpromoVideoDraft.mp4";
-// import genieBottleAnimation from "../images/newtest.mov";
 import hoodieAnimation from "../images/hoodieAnimation1.mov";
-// import communityAnimation from "../images/communityAnimation1.mov";
 import discordLogo from "../images/discordLogo.png";
 import twitterLogo from "../images/twitterLogo.svg";
 import youtubeLogo from "../images/youtubeLogo.png";
 import tiktokLogo from "../images/tiktokLogo.png";
-// import gLogo from "../images/GLogo.png";
 import arrowIcon from "../images/arrowIcon.png";
-// import * as THREE from "three";
-// import { useMemo, useRef } from "react";
-// import { BufferGeometry } from "three";
 import genieBottleAnimation1 from "../images/0001.mov";
-// import communityAnimation1 from "../images/communityAnimation4.mov";
 import creativeCommunityGif from "../images/0001_compressed.webp";
 import genieBottleGif from "../images/genieBottleGif_compressed.webp";
 import hoodieGif from "../images/hoodieGif_compressed.webp";
-// import FairyDustCursor from "./FairyDustCursor";
 import shirtImage1 from "../images/shirtimage1.webp";
 import shirtImage2 from "../images/shirtImage2.webp";
 import shirtImage3 from "../images/shirtImage3.webp";
@@ -38,12 +28,9 @@ import shirtImage8 from "../images/shirtimage8.webp";
 import shirtImage9 from "../images/shirtimage9.webp";
 
 const LandingPage = (props) => {
-  // eslint-disable-next-line no-unused-vars
-  // const [hovered, setHovered] = useState();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const [videoClicked, setVideoClicked] = useState(false);
-  // const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
   const imageArray = [
     shirtImage1,
@@ -75,27 +62,15 @@ const LandingPage = (props) => {
         {
           <motion.div
             initial={{ y: "-95vh", opacity: 1 }}
-            // animate={{
-            //   transition: { duration: 1.5, delay: 1.1 },
-            //   opacity: 1,
-            // }}
-            // exit={{ opacity: 0 }}
             className="hero-outer-container"
           >
             <motion.div className="hero-container">
               <motion.div className="hero">
-                <motion.h1>
-                  {/* <i className="infinity-logo" style={{ fontSize: "100px" }}>
-                    ∞
-                  </i>{" "} */}
-                  Infinity Hoodie
-                </motion.h1>
+                <motion.h1>Infinity Hoodie</motion.h1>
                 <motion.h2>
                   The futures most innovative hoodie for maximizing your
                   creativity. Be among the first to obtain the future of tech
                   wear.
-                  {/* <br></br> */}
-                  {/* Be among the first to obtain the future of tech wear. */}
                 </motion.h2>
               </motion.div>
               <div class="input-container">
@@ -124,8 +99,6 @@ const LandingPage = (props) => {
                       height: "auto",
                       width: "30px",
                       marginTop: ".2rem",
-
-                      // marginLeft: "10px", // added some margin to give space between the text and the arrow
                     }}
                   />
                 </motion.button>
@@ -176,15 +149,6 @@ const LandingPage = (props) => {
       </motion.div>
       <motion.div className="promo-video-container">
         <motion.div className="promo-video">
-          {/* <video
-            style={{ width: "90%", borderRadius: "2rem" }}
-            src={promoVideo}
-            // autoPlay
-            loop
-            controls
-          >
-            promoVideo
-          </video> */}
           <div
             className="video-responsive"
             onClick={() => setVideoClicked(true)}
@@ -280,7 +244,6 @@ const LandingPage = (props) => {
               height: "auto",
               width: "30px",
               marginTop: ".2rem",
-              // marginLeft: "10px",
             }}
             className="arrow-icon"
           />
@@ -293,7 +256,6 @@ const LandingPage = (props) => {
             <motion.div
               style={{
                 margin: "1rem",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "center",
               }}
@@ -303,16 +265,9 @@ const LandingPage = (props) => {
                 autoPlay
                 loop
                 muted
-                // controls
                 type="video/mov"
                 width={"70%"}
               ></video>
-              {/* <img
-                width={"70%"}
-                // height={"280px"}
-                src={hoodieGif}
-                alt="community gif"
-              ></img> */}
             </motion.div>
             <motion.div
               style={{
@@ -331,21 +286,15 @@ const LandingPage = (props) => {
             </motion.div>
           </motion.div>
           <motion.div className="product-section-container">
-            {/* <FairyDustCursor colors={["#D61C59", "#E7D84B", "#1B8798"]} /> */}
             <motion.div
               style={{
                 display: "flex",
                 alignItems: "left",
                 flexDirection: "column",
                 justifyContent: "center",
-                // justifyContent: "end",
               }}
             >
-              <motion.h1
-              // whileHover={{ scale: 1.1 }}
-              >
-                Genie
-              </motion.h1>
+              <motion.h1>Genie</motion.h1>
 
               <motion.h2>
                 Experience the power of the Genie as it guides and inspires you
@@ -357,10 +306,8 @@ const LandingPage = (props) => {
             <motion.div
               style={{
                 margin: "1rem",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "center",
-                // justifyContent: "left",
               }}
             >
               <video
@@ -368,7 +315,6 @@ const LandingPage = (props) => {
                 autoPlay
                 loop
                 muted
-                // controls
                 type="video/mov"
                 width={"70%"}
               ></video>
@@ -378,21 +324,10 @@ const LandingPage = (props) => {
             <motion.div
               style={{
                 margin: "1rem",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "left",
-                // alignItems: "right",
               }}
             >
-              {/* <video
-                src={communityAnimation1}
-                autoPlay
-                loop
-                muted
-                // controls
-                type="video/mov"
-                width={"70%"}
-              ></video> */}
               <img
                 width={screenWidth > 1200 ? "400px" : "300px"}
                 height={screenWidth > 1200 ? "400px" : "300px"}
@@ -432,20 +367,10 @@ const LandingPage = (props) => {
             <motion.div
               style={{
                 margin: "0",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              {/* <video
-                src={hoodieAnimation}
-                autoPlay
-                loop
-                muted
-                // controls
-                type="video/mov"
-                width={"70%"}
-              ></video> */}
               <img
                 width={"280px"}
                 height={"280px"}
@@ -473,25 +398,13 @@ const LandingPage = (props) => {
             </motion.div>
           </motion.div>
           <motion.div className="product-section-container-mobile">
-            {/* <FairyDustCursor colors={["#D61C59", "#E7D84B", "#1B8798"]} /> */}
             <motion.div
               style={{
                 margin: "0",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "center",
-                // justifyContent: "left",
               }}
             >
-              {/* <video
-                src={genieBottleAnimation1}
-                autoPlay
-                loop
-                muted
-                // controls
-                type="video/mov"
-                width={"70%"}
-              ></video> */}
               <img
                 width={"280px"}
                 height={"280px"}
@@ -510,11 +423,7 @@ const LandingPage = (props) => {
                 textAlign: "center",
               }}
             >
-              <motion.h1
-              // whileHover={{ scale: 1.1 }}
-              >
-                Genie
-              </motion.h1>
+              <motion.h1>Genie</motion.h1>
 
               <motion.h2>
                 Experience the power of the Genie as it guides and inspires you
@@ -528,21 +437,10 @@ const LandingPage = (props) => {
             <motion.div
               style={{
                 margin: "0",
-                // height: "500px",
                 display: "flex",
                 justifyContent: "center",
-                // alignItems: "right",
               }}
             >
-              {/* <video
-                src={communityAnimation1}
-                autoPlay
-                loop
-                muted
-                // controls
-                type="video/mov"
-                width={"70%"}
-              ></video> */}
               <img
                 width={"280px"}
                 height={"280px"}
@@ -614,8 +512,6 @@ const LandingPage = (props) => {
                 height: "auto",
                 width: "30px",
                 marginTop: ".2rem",
-
-                // marginLeft: "10px", // added some margin to give space between the text and the arrow
               }}
             />
           </motion.button>

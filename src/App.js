@@ -1,19 +1,11 @@
 // import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useState, useEffect, useRef } from "react";
-import {
-  motion,
-  // AnimatePresence,
-  useAnimation,
-  useScroll,
-} from "framer-motion";
+import { motion, useAnimation, useScroll } from "framer-motion";
 import { Environment } from "@react-three/drei";
-// import GenieLamp from "./components/GenieLamp";
 import LandingPage from "./components/LandingPage";
 import "./styles/landing-page.css";
-// import arrow from "./arrow.png";
 import Hoodie from "./components/Hoodie";
-// import * as THREE from "three";
 import gLogo from "../src/images/GLogoLarge.webp";
 import loadingAnimation from "../src/images/loadingGif.gif";
 import hoodieImage1 from "../src/images/hoodieimage1.webp";
@@ -32,11 +24,9 @@ import hoodieImage13 from "../src/images/hoodieimages13.webp";
 
 const LoadingScreen = () => {
   useEffect(() => {
-    // Disable scrolling when the loading screen is visible
     document.body.classList.add("no-scroll");
 
     return () => {
-      // Re-enable scrolling when the loading screen is hidden
       document.body.classList.remove("no-scroll");
     };
   }, []);
@@ -68,22 +58,12 @@ const LoadingScreen = () => {
           backgroundColor: "transparent",
         }}
       >
-        {/* <h1>Genie X</h1> */}
-        {/* <video
-          src={loadingAnimation}
-          autoPlay
-          loop
-          muted
-          type="video/mov"
-          style={{ width: "300px" }} // fixed width
-        ></video> */}
         <img
           src={loadingAnimation}
           width={200}
           style={{ backgroundColor: "transparent" }}
           alt="loading animation"
         ></img>
-        {/* <p>Loading...</p> */}
       </div>
     </div>
   );
@@ -194,8 +174,6 @@ const App = () => {
           <div
             className="logo-container"
             style={{
-              // position: "absolute",
-              // top: 0,
               left: 0,
               zIndex: 9999,
             }}

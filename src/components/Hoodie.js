@@ -19,24 +19,8 @@ export default function Hoodie({ ...props }) {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 
-    // cleanup function
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // useEffect(() => {
-  //   const video = document.createElement("video");
-  //   video.src = props.hoodieAnimation;
-  //   video.loop = true;
-  //   video.muted = true;
-  //   video.autoplay = true;
-  //   video.play();
-  //   const texture = new THREE.VideoTexture(video);
-  //   texture.wrapS = THREE.RepeatWrapping;
-  //   texture.wrapT = THREE.RepeatWrapping;
-  //   texture.repeat.set(-1, -1); // Flip the texture by setting negative repeat
-  //   texture.offset.set(1, 1); // Offset to correct flipped repeat
-  //   setVideoTexture(texture);
-  // }, []);
 
   useEffect(() => {
     if (props.hoodieImage && Array.isArray(props.hoodieImage)) {
@@ -71,12 +55,9 @@ export default function Hoodie({ ...props }) {
         );
       }, 750);
 
-      // Cleanup function to clear the interval when the component unmounts
       return () => clearInterval(interval);
     }
   }, [props.hoodieImage]);
-
-  // useEffect(() => console.log(imageTextures[currentImage]), [currentImage]);
 
   useFrame((state) => {
     const time = state.clock.getElapsedTime();
@@ -99,7 +80,6 @@ export default function Hoodie({ ...props }) {
       props.scroll < 0.16 ? 0.003 + props.scroll / 100 : 0.003 + 0.16 / 100,
   });
 
-  // Log the videoTexture and isLoaded when clicked
   const handleClick = () => {
     console.log(videoTexture);
   };
@@ -121,17 +101,11 @@ export default function Hoodie({ ...props }) {
             rotation={[Math.PI / 2, 0, 0]}
             scale={scale}
           >
-            {/* {windowWidth > 600 && imageTextures && (
-              <meshStandardMaterial
-                attach="material"
-                map={imageTextures[currentImage]}
-              />
-            )} */}
             {imageTextures[currentImage] && (
               <meshStandardMaterial
                 attach="material"
                 map={imageTextures[currentImage]}
-                key={currentImage} // force re-render when currentImage changes
+                key={currentImage}
               />
             )}
           </animated.mesh>
