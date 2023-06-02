@@ -26,6 +26,7 @@ import shirtImage6 from "../images/shirtImage6.webp";
 import shirtImage7 from "../images/shirtimage7.webp";
 import shirtImage8 from "../images/shirtimage8.webp";
 import shirtImage9 from "../images/shirtimage9.webp";
+import hdr from "../images/hdr.hdr";
 
 const LandingPage = (props) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -153,23 +154,25 @@ const LandingPage = (props) => {
             className="video-responsive"
             onClick={() => setVideoClicked(true)}
           >
-            {videoClicked ? (
-              <iframe
-                style={{
-                  width: "90%",
-                  borderRadius: "2rem",
-                  height: "100%",
-                  position: "absolute",
-                  left: "30px",
-                  top: "0",
-                }}
-                src="https://www.youtube.com/embed/WYg6GiLA6zA?autoplay=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            ) : (
+            {/* {videoClicked ? ( */}
+            <iframe
+              style={{
+                width: "90%",
+                borderRadius: "2rem",
+                height: "100%",
+                position: "absolute",
+                left: "30px",
+                top: "0",
+              }}
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Fq_zUiLIKXE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            {/* ) : (
               <img
                 style={{
                   width: "90%",
@@ -182,7 +185,7 @@ const LandingPage = (props) => {
                 src={`https://img.youtube.com/vi/WYg6GiLA6zA/hqdefault.jpg`}
                 alt="YouTube video thumbnail"
               />
-            )}
+            )} */}
           </div>
         </motion.div>
       </motion.div>
@@ -195,7 +198,7 @@ const LandingPage = (props) => {
         >
           <Canvas className="shirt-canvas">
             <Shirt shirtImages={imageArray} scroll={props.scroll * 2.6} />
-            <Environment preset="city" />
+            <Environment files={hdr} />
           </Canvas>
         </motion.div>
         <motion.div className="why-we-made-this-content">

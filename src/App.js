@@ -21,6 +21,7 @@ import hoodieImage10 from "../src/images/hoodieimages10.webp";
 import hoodieImage11 from "../src/images/hoodieimages11.webp";
 import hoodieImage12 from "../src/images/hoodieimages12.webp";
 import hoodieImage13 from "../src/images/hoodieimages13.webp";
+import hdr from "../src/images/hdr.hdr";
 
 const LoadingScreen = () => {
   useEffect(() => {
@@ -196,7 +197,7 @@ const App = () => {
               hoodieImage={imageArray}
               setIsHoodieLoaded={setIsHoodieLoaded}
             />
-            <Environment preset="city" />
+            <Environment files={hdr} />
           </Canvas>
         </motion.div>
         <LandingPage scroll={scroll} />
