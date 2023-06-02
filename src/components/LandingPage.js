@@ -62,7 +62,7 @@ const LandingPage = (props) => {
       <AnimatePresence>
         {
           <motion.div
-            initial={{ y: "-95vh", opacity: 1 }}
+            initial={{ y: screenWidth < 400 ? "-107vh" : "-96vh", opacity: 1 }}
             className="hero-outer-container"
           >
             <motion.div className="hero-container">
@@ -117,13 +117,13 @@ const LandingPage = (props) => {
             alt="prop-icon"
           ></img>
           <motion.p>
-            Complete creative control no more being told what to wear.
+            Complete creative control. Design any idea with ease.
           </motion.p>
         </motion.div>
         <motion.div>
           <motion.h2>Harness AI</motion.h2>
           <img className="skeumorphic-icon" src={aiIcon} alt="prop-icon"></img>
-          <motion.p>Maximize your creativity designing with AI</motion.p>
+          <motion.p>Maximize your creativity designing with AI.</motion.p>
         </motion.div>
         <motion.div>
           <motion.h2>Premium Quality</motion.h2>
@@ -133,7 +133,7 @@ const LandingPage = (props) => {
             alt="prop-icon"
           ></img>
           <motion.p>
-            Premium quality physical garments with digital counterparts
+            Premium quality physical garments with digital counterparts.
           </motion.p>
         </motion.div>
         <motion.div>
@@ -144,7 +144,7 @@ const LandingPage = (props) => {
             alt="prop-icon"
           ></img>
           <motion.p>
-            Access to a vibrant community of cutting-edge creatives
+            Access to a vibrant community of cutting-edge creatives.
           </motion.p>
         </motion.div>
       </motion.div>

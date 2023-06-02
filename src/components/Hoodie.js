@@ -70,7 +70,7 @@ export default function Hoodie({ ...props }) {
   const { position } = useSpring({
     position: [
       0,
-      window.innerWidth > 1200 ? -1.5 : window.innerWidth <= 850 ? -1.5 : 0,
+      window.innerWidth > 850 ? -1.5 : window.innerWidth <= 850 ? -1.5 : 0,
       0,
     ],
   });
