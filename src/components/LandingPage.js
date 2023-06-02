@@ -31,7 +31,7 @@ import hdr from "../images/hdr.hdr";
 const LandingPage = (props) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const [videoClicked, setVideoClicked] = useState(false);
+  // const [videoClicked, setVideoClicked] = useState(false);
 
   const imageArray = [
     shirtImage1,
@@ -152,7 +152,7 @@ const LandingPage = (props) => {
         <motion.div className="promo-video">
           <div
             className="video-responsive"
-            onClick={() => setVideoClicked(true)}
+            // onClick={() => setVideoClicked(true)}
           >
             {/* {videoClicked ? ( */}
             <iframe
