@@ -27,6 +27,7 @@ import shirtImage7 from "../images/shirtimage7.webp";
 import shirtImage8 from "../images/shirtimage8.webp";
 import shirtImage9 from "../images/shirtimage9.webp";
 import hdr from "../images/hdr.hdr";
+import { Link } from "react-router-dom";
 
 const LandingPage = (props) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -75,39 +76,42 @@ const LandingPage = (props) => {
                 </motion.h2>
               </motion.div>
               <div class="input-container">
-                <motion.button
-                  className="discord-button"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-
-                    justifyContent: "center",
-                    lineHeight: "1em",
-                    width: "280px",
-                    padding: "1rem",
-                    gap: "1rem",
-                    backgroundColor: "transparent",
-                  }}
-                >
-                  Claim Your Spot
-                  <img
-                    src={arrowIcon}
-                    alt="arrow icon"
+                <Link to={"/waitlist"}>
+                  <motion.button
+                    className="discord-button"
                     style={{
+                      display: "flex",
+                      alignItems: "center",
+
+                      justifyContent: "center",
+                      lineHeight: "1em",
+                      width: "280px",
+                      padding: "1rem",
+                      gap: "1rem",
                       backgroundColor: "transparent",
-                      filter: "invert(1)",
-                      transform: "scaleX(-1)",
-                      height: "auto",
-                      width: "30px",
-                      marginTop: ".2rem",
                     }}
-                  />
-                </motion.button>
+                  >
+                    Claim Your Spot
+                    <img
+                      src={arrowIcon}
+                      alt="arrow icon"
+                      style={{
+                        backgroundColor: "transparent",
+                        filter: "invert(1)",
+                        transform: "scaleX(-1)",
+                        height: "auto",
+                        width: "30px",
+                        marginTop: ".2rem",
+                      }}
+                    />
+                  </motion.button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
         }
       </AnimatePresence>
+
       <motion.div className="propositions">
         <motion.div>
           <motion.h2>Everyone's Creative</motion.h2>
@@ -224,33 +228,35 @@ const LandingPage = (props) => {
       </motion.div>
       <motion.div className="follow-the-journey-container">
         <motion.h1 className="follow-the-journey">Join the Waitlist</motion.h1>
-        <motion.button
-          className="discord-button"
-          style={{
-            display: "flex",
-            alignItems: "center",
-
-            justifyContent: "center",
-            lineHeight: "1em",
-            width: "280px",
-            padding: "1rem",
-            gap: "1rem",
-          }}
-        >
-          Claim Your Spot
-          <img
-            src={arrowIcon}
-            alt="arrow icon"
+        <Link to="/waitlist">
+          <motion.button
+            className="discord-button"
             style={{
-              backgroundColor: "transparent",
-              transform: "scaleX(-1)",
-              height: "auto",
-              width: "30px",
-              marginTop: ".2rem",
+              display: "flex",
+              alignItems: "center",
+
+              justifyContent: "center",
+              lineHeight: "1em",
+              width: "280px",
+              padding: "1rem",
+              gap: "1rem",
             }}
-            className="arrow-icon"
-          />
-        </motion.button>
+          >
+            Claim Your Spot
+            <img
+              src={arrowIcon}
+              alt="arrow icon"
+              style={{
+                backgroundColor: "transparent",
+                transform: "scaleX(-1)",
+                height: "auto",
+                width: "30px",
+                marginTop: ".2rem",
+              }}
+              className="arrow-icon"
+            />
+          </motion.button>
+        </Link>
       </motion.div>
 
       {screenWidth > 900 ? (
@@ -356,9 +362,11 @@ const LandingPage = (props) => {
                 and collaborative with others; have your own creations upvoted
                 by the community.
               </motion.h2>
-              <motion.button className="discord-button-1">
-                Join Discord
-              </motion.button>
+              <Link target="_blank" to="https://discord.gg/QU7Xhqhn">
+                <motion.button className="discord-button-1">
+                  Join Discord
+                </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
         </>
@@ -491,33 +499,35 @@ const LandingPage = (props) => {
           </motion.h2>
         </motion.div>
         <div class="input-container">
-          <motion.button
-            className="discord-button"
-            style={{
-              display: "flex",
-              alignItems: "center",
-
-              justifyContent: "center",
-              lineHeight: "1em",
-              width: "230px",
-              padding: "1rem",
-              gap: "1rem",
-            }}
-          >
-            Unlock Access
-            <img
-              src={arrowIcon}
-              alt="arrow icon"
+          <Link to="/waitlist">
+            <motion.button
+              className="discord-button"
               style={{
-                backgroundColor: "transparent",
-                filter: "invert(1)",
-                transform: "scaleX(-1)",
-                height: "auto",
-                width: "30px",
-                marginTop: ".2rem",
+                display: "flex",
+                alignItems: "center",
+
+                justifyContent: "center",
+                lineHeight: "1em",
+                width: "230px",
+                padding: "1rem",
+                gap: "1rem",
               }}
-            />
-          </motion.button>
+            >
+              Unlock Access
+              <img
+                src={arrowIcon}
+                alt="arrow icon"
+                style={{
+                  backgroundColor: "transparent",
+                  filter: "invert(1)",
+                  transform: "scaleX(-1)",
+                  height: "auto",
+                  width: "30px",
+                  marginTop: ".2rem",
+                }}
+              />
+            </motion.button>
+          </Link>
         </div>
         <div className="footer-container">
           <h1
@@ -530,10 +540,34 @@ const LandingPage = (props) => {
             Genie X
           </h1>
           <div className="logos">
-            <img src={discordLogo} alt="discord"></img>
-            <img src={twitterLogo} alt="discord"></img>
-            <img src={tiktokLogo} alt="discord"></img>
-            <img src={youtubeLogo} alt="discord"></img>
+            <Link
+              to={"https://discord.gg/QU7Xhqhn"}
+              style={{ backgroundColor: "transparent" }}
+              target="_blank"
+            >
+              <img src={discordLogo} alt="discord"></img>
+            </Link>
+            <Link
+              to="https://twitter.com/GenieX_ai"
+              target="_blank"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <img src={twitterLogo} alt="discord"></img>
+            </Link>
+            <Link
+              to={"https://www.tiktok.com/@geniexai"}
+              target="_blank"
+              style={{ backgroundColor: "transparent" }}
+            >
+              <img src={tiktokLogo} alt="discord"></img>
+            </Link>
+            <Link
+              style={{ backgroundColor: "transparent" }}
+              target="_blank"
+              to="https://www.youtube.com/channel/UCgWq7jRMZeOGsOHwbzQwxNg"
+            >
+              <img src={youtubeLogo} alt="discord"></img>
+            </Link>
           </div>
         </div>
       </motion.div>

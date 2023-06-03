@@ -1,5 +1,15 @@
 /*  */
 
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: inherit;
+    /* Or replace 'inherit' with the specific color you want */
+}
+
 .no-scroll {
     overflow: hidden;
 }
@@ -735,6 +745,7 @@
         width: 100%;
         
     } 
+
 
     .why-we-made-this-content p {
         padding: 0 !important;

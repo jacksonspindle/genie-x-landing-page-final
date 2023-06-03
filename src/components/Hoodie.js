@@ -77,7 +77,11 @@ export default function Hoodie({ ...props }) {
 
   const { scale } = useSpring({
     scale:
-      props.scroll < 0.16 ? 0.003 + props.scroll / 100 : 0.003 + 0.16 / 100,
+      props.scroll < 0.16
+        ? 0.003 + props.scroll / 100
+        : props.scroll > 0.2
+        ? 0.003
+        : 0.003 + 0.16 / 100,
   });
 
   const handleClick = () => {

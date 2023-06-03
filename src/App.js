@@ -22,6 +22,8 @@ import hoodieImage11 from "../src/images/hoodieimages11.webp";
 import hoodieImage12 from "../src/images/hoodieimages12.webp";
 import hoodieImage13 from "../src/images/hoodieimages13.webp";
 import hdr from "../src/images/hdr.hdr";
+import { Routes, Route, BrowserRouter as Router, Link } from "react-router-dom";
+import Waitlist from "./components/Waitlist";
 
 const LoadingScreen = () => {
   useEffect(() => {
@@ -169,39 +171,48 @@ const App = () => {
 
   return (
     <div>
-      <div style={{ position: "relative" }}>
-        {loading && <LoadingScreen />}
-        {!loading && (
-          <div
-            className="logo-container"
+      <Router>
+        <div style={{ position: "relative" }}>
+          {loading && <LoadingScreen />}
+          {!loading && (
+            <Link to="/">
+              <div
+                className="logo-container"
+                style={{
+                  left: 0,
+                  zIndex: 9999,
+                }}
+              >
+                <img alt="logo" src={gLogo} className="logo"></img>
+                <h1 style={{ fontSize: "30px" }}>Genie X</h1>
+              </div>
+            </Link>
+          )}
+
+          <motion.div
+            className="canvas"
             style={{
-              left: 0,
-              zIndex: 9999,
+              opacity: loading ? 0 : 1,
+              pointerEvents: loading ? "none" : "auto",
             }}
+            ref={canvasRef}
           >
-            <img alt="logo" src={gLogo} className="logo"></img>
-            <h1 style={{ fontSize: "30px" }}>Genie X</h1>
-          </div>
-        )}
-        <motion.div
-          className="canvas"
-          style={{
-            opacity: loading ? 0 : 1,
-            pointerEvents: loading ? "none" : "auto",
-          }}
-          ref={canvasRef}
-        >
-          <Canvas>
-            <Hoodie
-              scroll={scroll}
-              hoodieImage={imageArray}
-              setIsHoodieLoaded={setIsHoodieLoaded}
-            />
-            <Environment files={hdr} />
-          </Canvas>
-        </motion.div>
-        <LandingPage scroll={scroll} />
-      </div>
+            <Canvas>
+              <Hoodie
+                scroll={scroll}
+                hoodieImage={imageArray}
+                setIsHoodieLoaded={setIsHoodieLoaded}
+              />
+              <Environment files={hdr} />
+            </Canvas>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/waitlist" element={<Waitlist />} />
+            </Routes>
+          </motion.div>
+          {/* <LandingPage scroll={scroll} /> */}
+        </div>
+      </Router>
     </div>
   );
 };
