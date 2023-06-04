@@ -421,6 +421,17 @@ a:visited {
     transition: color .3s ease-in-out, background-position 2s ease-in-out;
 }
 
+.gradient-text-mobile{
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 200% 200%;
+            animation: rainbow 2s ease-in-out infinite;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: rgba(0, 0, 0, 0);
+            cursor: url('/src/images/brushIcon.png'), auto;
+            transition: color .3s ease-in-out, background-position 2s ease-in-out;
+}
+
 .text:hover {
     color: rgba(0, 0, 0, 0);
 }

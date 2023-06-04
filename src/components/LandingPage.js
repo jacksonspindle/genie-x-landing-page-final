@@ -170,7 +170,7 @@ const LandingPage = (props) => {
               }}
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/Fq_zUiLIKXE"
+              src="https://www.youtube.com/embed/MEOoFCZ89kY"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -472,7 +472,7 @@ const LandingPage = (props) => {
               }}
             >
               <motion.h1 className="gradient-text">
-                <span className="text">Creative Community</span>
+                <span className="gradient-text-mobile">Creative Community</span>
               </motion.h1>
               <motion.h2>
                 Our thriving ecosystem celebrates and empowers individuals to
