@@ -480,12 +480,14 @@ const LandingPage = (props) => {
                 and collaborative with others; have your own creations upvoted
                 by the community.
               </motion.h2>
-              <motion.button
-                className="discord-button-1"
-                style={{ marginTop: "2rem" }}
-              >
-                Join Discord
-              </motion.button>
+              <Link target="_blank" to="https://discord.gg/QU7Xhqhn">
+                <motion.button
+                  className="discord-button-1"
+                  style={{ marginTop: "2rem" }}
+                >
+                  Join Discord
+                </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
         </motion.div>
